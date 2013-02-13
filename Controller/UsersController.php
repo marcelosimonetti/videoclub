@@ -15,7 +15,7 @@ class UsersController extends AppController {
     public function view($id = null) {
         $this->User->id = $id;
         if (!$this->User->exists()) {
-            throw new NotFoundException(__('Usuario inválido'));
+            throw new NotFoundException(__('Usuario inv&aacutelido'));
         }
         $this->set('user', $this->User->read(null, $id));
     }
@@ -35,7 +35,7 @@ class UsersController extends AppController {
     public function edit($id = null) {
         $this->User->id = $id;
         if (!$this->User->exists()) {
-            throw new NotFoundException(__('Usuario inválido'));
+            throw new NotFoundException(__('Usuario inv&aacutelido'));
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->User->save($this->request->data)) {
@@ -56,13 +56,13 @@ class UsersController extends AppController {
         }
         $this->User->id = $id;
         if (!$this->User->exists()) {
-            throw new NotFoundException(__('Usuario inválido'));
+            throw new NotFoundException(__('Usuario inv&aacutelido'));
         }
         if ($this->User->delete()) {
             $this->Session->setFlash(__('Usuario borrado'));
             $this->redirect(array('action' => 'index'));
         }
-        $this->Session->setFlash(__('Usuario noha sido borrado'));
+        $this->Session->setFlash(__('El usuario no ha sido borrado'));
         $this->redirect(array('action' => 'index'));
     }
 	
@@ -71,7 +71,7 @@ class UsersController extends AppController {
         if ($this->Auth->login()) {
             $this->redirect($this->Auth->redirect());
         } else {
-            $this->Session->setFlash(__('Nombre de usuario o contraseña invalido. Por favor intente de nuevo'));
+            $this->Session->setFlash(__('Nombre de usuario o contrase&ntilde;a inv&aacutelido. Por favor intente de nuevo'));
         }
     }
 }
