@@ -2,10 +2,10 @@
 <?php echo $this->Session->flash('auth'); ?>
 <?php echo $this->Form->create('User'); ?>
     <fieldset>
-        <legend><?php echo __('Please enter your username and password'); ?></legend>
-        <?php echo $this->Form->input('username');
-        echo $this->Form->input('password');
+        <legend><?php echo __('INGRESE NOMBRE DE USUARIO Y CONTRASE&Ntilde;A'); ?></legend>
+        <?php echo $this->Form->input('Nombre de Usuario');
+        echo $this->Form->input('Contrase&ntilde;a');
     ?>
     </fieldset>
-<?php echo $this->Form->end(__('Login')); ?>
+<?php echo $this->Form->end(__('Ingresar')); ?>
 </div>
