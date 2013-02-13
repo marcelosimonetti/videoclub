@@ -39,7 +39,7 @@ class AppController extends Controller {
         'Session',
         'Auth' => array(
             'loginRedirect' => array('controller' => 'clientes', 'action' => 'index'),
-            'logoutRedirect' => 'http://localhost/'
+            'logoutRedirect' => 'http://localhost/videoclub/webroot/logout.html'
         )
     );
 

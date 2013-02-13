@@ -13,4 +13,4 @@
 </div>
 <div align=left><b>Integrantes: </b><br>Fuentes Baz&aacuten, Rodrigo<br>Simonetti, Marcelo
 <br><br><br>
-<img src=http://localhost/imagen1.jpg alt='Pantalla de login' width=254 height=179></div>
+<img src=http://localhost/videoclub/webroot/img/imagen1.jpg alt='Pantalla de login' width=254 height=179></div>
